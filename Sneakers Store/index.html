@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sneakers.com</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <!-- links -->
+        <div class="nav-link-container">
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" class="nav-link">collection</a>
+            </li>
+            <li>
+              <a href="Men.html" class="nav-link">men</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">women</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">about</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">contact</a>
+            </li>
+          </ul>
+          <img src="./images/logo.svg" class="img nav-logo-img" />
+        </div>
+        <img src="./images/logo.svg" class="img logo" />
+        <!--cart icon -->
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="cart-item-count">0</span>
+          <img src="./images/image-avatar.png" alt="" class="img avtar" />
+        </div>
+      </div>
+    </nav>
+    <div class="sidebar-overlay">
+      <div class="sidebar">
+        <button class="sidebar-close"><i class="fas fa-times"></i></button>
+        <ul class="sidebar-items">
+          <a href="index.html">
+            <li>Collections</li>
+          </a>
+          <a href="Men.html">
+            <li>Men</li>
+          </a>
+          <a href="index.html">
+            <li>Women</li>
+          </a>
+          <a href="index.html">
+            <li>About</li>
+          </a>
+          <a href="index.html">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <!-- cart -->
+    <div class="cart-overlay">
+      <aside class="cart">
+        <header>
+          <h2 class="cart-title text-slanted">cart</h2>
+        </header>
+        <article class="cart-items">
+          <!-- <div class="cart-img">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              alt=""
+              class="img"
+            />
+          </div>
+          <div class="cart-info">
+            <p class="company">Fall limited Edition Sneakers</p>
+            <p class="item-price">$375.00</p>
+          </div>
+          <button class="delete-btn">
+            <img src="./images/icon-delete.svg" class="img" />
+          </button> -->
+        </article>
+        <button class="btn check-out">check out</button>
+      </aside>
+    </div>
+    <section class="hero">
+      <div class="products">
+        <div class="product-imgs">
+          <img
+            src="./images/image-product-1.jpg"
+            alt=""
+            data-id="1"
+            class="img product-img"
+          />
+          <div class="img-container">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              alt=""
+              data-id="1"
+              class="img small-img"
+            />
+            <img
+              src="./images/image-product-2-thumbnail.jpg"
+              alt=""
+              data-id="2"
+              class="img small-img"
+            />
+            <img
+              src="./images/image-product-3-thumbnail.jpg"
+              alt=""
+              data-id="3"
+              class="img small-img"
+            />
+            <img
+              src="./images/image-product-4-thumbnail.jpg"
+              alt=""
+              data-id="4"
+              class="img small-img"
+            />
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="company-title">SNEAKER COMPANY</p>
+          <h1 class="product-name" style="text-transform: capitalize">
+            Fall limited edition Sneakers
+          </h1>
+          <p class="description">
+            These low-profile sneakers are you perfect casual wear companion.
+            featuring a durable rubber outer sole.they'll withstand everything
+            the wearther can offer
+          </p>
+          <div class="price-container">
+            <p class="price">$125.00</p>
+            <span class="discount btn">50%</span>
+          </div>
+          <div class="addToCart-container">
+            <div class="quantity-btn">
+              <button class="minus-btn">
+                <i class="fas fa-minus"></i>
+              </button>
+              <span class="quantity-value" data-value="0" style="color: black"
+                >0</span
+              >
+              <button class="plus-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <button class="btn AddToCart">
+              <i class="fas fa-shopping-cart"></i>
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero-overflow -->
+    <div class="product-overflow">
+      <aside class="single-product">
+        <button class="single-product-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <article class="product-imgs">
+          <img
+            src="./images/image-product-1.jpg"
+            alt=""
+            data-id="1"
+            class="img single-product-img"
+          />
+          <div class="single-img-container">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              alt=""
+              data-id="1"
+              class="img small-img"
+            />
+            <img
+              src="./images/image-product-2-thumbnail.jpg"
+              alt=""
+              data-id="2"
+              class="img small-img"
+            />
+            <img
+              src="./images/image-product-3-thumbnail.jpg"
+              alt=""
+              data-id="3"
+              class="img small-img"
+            />
+            <img
+              src="./images/image-product-4-thumbnail.jpg"
+              alt=""
+              data-id="4"
+              class="img small-img"
+            />
+          </div>
+        </article>
+      </aside>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
